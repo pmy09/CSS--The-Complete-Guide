@@ -6,13 +6,14 @@ body {
     background: #046815;
 }
 
-h1 {
+#product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
 }
 
 .section-title {
     color: #ff1b68;
+    /* font-family: inherit; */
 }
 
 /* h1 {
