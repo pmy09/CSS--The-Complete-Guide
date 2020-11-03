@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #product-overview {
     background: #046815;
 }
@@ -10,3 +14,7 @@ h1 {
 .section-title {
     color: #ff1b68;
 }
+
+/* h1 {
+    font-family: sans-serif;
+} */
