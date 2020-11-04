@@ -1,0 +1,38 @@
+/* div {
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+} */
+
+div {
+    padding: 10px 5px 7.5px 3px;
+    border: 5px solid black;
+    margin: 10px 5px 7.5px 3px;
+    display: inline-block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* #first {
+    height: 100%;
+} */
+
+#first {
+    height: 300px;
+    width: 50%;
+    display: none;
+    /* visibility: hidden; */
+}
+
+/* #second:hover,
+#second:active {
+    color: pink;
+} */
+
+div:last-of-type:hover,
+div:last-of-type:active {
+    color: pink;
+}
