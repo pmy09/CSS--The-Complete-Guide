@@ -28,6 +28,18 @@ body {
 .section-title {
     color: #ff1b68;
     /* font-family: inherit; */
+    text-align: center;
+    
+}
+
+.plan {
+    background-color: #0e4f1f;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
 
 /* h1 {
