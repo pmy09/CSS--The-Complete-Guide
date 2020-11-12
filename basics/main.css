@@ -1,11 +1,11 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-}
+} */
 
 #product-overview {
     /* background: #046815; */
@@ -30,6 +30,12 @@ body {
     /* font-family: inherit; */
     text-align: center;
     
+}
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 .plan {
@@ -199,7 +205,7 @@ body {
     color: red;
 } */
 
-.main-nav__item a:hover,
+/* .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
     border-bottom: 5px solid white;
