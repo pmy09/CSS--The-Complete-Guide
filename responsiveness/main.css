@@ -1,0 +1,348 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+} */
+
+#product-overview {
+    /* background: #046815; */
+    background: linear-gradient(to top, rgba(80, 60, 18, 0.6) 10%, transparent),
+     url("images/freedom.jpg") center/cover no-repeat border-box,
+      red;
+    /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+    /* background-image: linear-gradient(to bottom red,blue); */
+    /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
+    width: 100vw;
+    height: 33vh;
+    /* padding: 1.38rem; */
+    margin-top: 2.75rem;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 5px; */
+    /* border: 5px solid black;
+    margin: 10px; */
+    position: relative;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+    #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 5rem;
+    }
+}
+
+.section-title {
+    color: #ff1b68;
+    /* font-family: inherit; */
+    text-align: center;
+    
+}
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.plan {
+    background-color: #d5ffdc;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan--highlighted {
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+    background: white;
+    color: #19b84c;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.plan__title {
+    color: #0e4f1f;
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .plan__features li {
+    margin: 8px;
+} */
+
+.plan__feature {
+    margin: 0.5rem 0;
+}
+
+/* .button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
+} */
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 2rem;
+}
+
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+/* .main-header {
+    width: 100%;
+    background: #0a0a0a;
+    padding: 8px 16px;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+/* .main-nav__item a::after {
+    content: " (link)";
+    color: red;
+} */
+
+/* .main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+} */
+
+
+/* p::first-letter {
+    color: red;
+    font-size: 20px;
+} */
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
