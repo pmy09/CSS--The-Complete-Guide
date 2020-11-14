@@ -5,6 +5,12 @@
     /* grid-template-columns: 200px 10rem 20% 1fr; */
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 5rem minmax(10px, auto) 100px;
+    /* grid-column-gap: 20px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px 20px;
+    grid-template-areas: "header header header header" 
+                         ". . main main"
+                         "footer footer footer footer";
 }
 
 .el1 {
@@ -13,11 +19,14 @@
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: span 1;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    /* grid-column: 1 / -1; */
+    /* grid-row-start: 2;
+    grid-row-end: span 1; */
+    /* grid-row: 2 / span 1; */
     z-index: 1;
+    grid-area: main;
 }
 
 .el3 {
@@ -26,12 +35,16 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3; */
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: span 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 3; */
+    /* grid-area: 1 / 2 / 3 / span 3; */
+    /* grid-area: row-start / column-start / row-end / column-end; DO NOT UNCOMMENT */
+    grid-area: header;
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-area: footer;
 }
